@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Validation Form</title>
+		<link rel="styleSheet" href="form.css">
+	</head>
+	<body>
+		
+		<form name="valForm" action="#" onsubmit="return validate()">
+			<div class="sub">
+				<label for="source">Select your source :</label>
+				<input class="inputs" name="source" type="text"
+					placeholder="Google Cloud Storage" id="source"
+					autocomplete="off" />
+				<br><span id="newSource" class="warn"> </span>
+			</div>
+
+			<div class="sub">
+				<label for="provide">Provide a name for pipeline :</label>
+				<input class="inputs" name="provide" type="text"
+					placeholder="e.g.,cust_shop_energy_gateway001" id="provide"
+					autocomplete="off" />
+				<br><span id="newProvide" class="warn"> </span>
+			</div>
+
+			<div class="sub">
+				<label for="project">GCS project name : </label>
+				<input class="inputs" name="project" type="text" placeholder="project-id"
+					id="project"
+					autocomplete="off" />
+				<br><span id="newProject" class="warn"> </span>
+			</div>
+
+			<div class="sub">
+				<label for="buckets">GCS bucket name :</label>
+				<input class="inputs" name="buckets" type="text"
+					placeholder="gs://your-bucket"
+					id="buckets"
+					autocomplete="off" />
+				<br><span id="newBucket" class="warn"> </span>
+			</div>
+
+			<div class="sub">
+				<label for="cloudStorage">Input Cloud Storage File(s) : </label>
+				<input class="inputs" name="cloudStorage" type="text"
+					placeholder="GCS location of your files"
+					id="cloudStorage"
+					autocomplete="off" />
+				<br><span id="newCloud" class="warn"> </span>
+			</div>
+
+			<div class="sub">
+				<label for="cred">GCS Credentials :</label>
+				<input class="inputs" name="Credentials" type="text"
+					placeholder="Example:gs://your-bucket/your-files/01.csv"
+					id="cred"
+					autocomplete="off" />
+				<br><span id="newCred" class="warn"> </span>
+			</div>
+
+			<div class="sub">
+				<label for="running">Run Every : </label>
+				<input class="inputs" name="running" type="text" placeholder="(in minutes)"
+					id="running"
+					autocomplete="off" />
+				<br><span id="newRun" class="warn"> </span>
+			</div>
+
+			<div class="buttons">
+				<input type="submit" value="Create" class="create" name="Create" />
+				<input value="Cancel" type="button" class="cancel" name="Cancel">
+			</div>
+		</form>
+		<script src="form.js">
+
+        </script>
+	</body>
+</html>

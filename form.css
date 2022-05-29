@@ -1,0 +1,108 @@
+
+form {
+  background: rgb(158, 219, 219);
+  color: black;
+ padding: 16px 25px 2px 25px;
+  margin-top: 18px;
+  align-items: center;
+  height: 27em;
+  width: max-content;
+  font-size: 20px;
+  border-radius: 17px;
+  border: solid black 2px;
+}
+.sub {
+    padding: 12px;
+    margin-bottom: 18px;
+}
+
+.inputs {
+    border-radius: 5px;
+  padding: 12px;
+  background: grey;
+  color: white;
+  float: right;
+  height: 24px;
+ 
+}
+::placeholder{
+color: lightgrey;
+}
+.buttons {
+    position: fixed;
+  left: 0;
+  text-align: center;
+   width: 100%;
+}
+.create{
+  background: green;
+   padding: 4px 18px;
+  font-size: 24px;
+  border: solid black 2px;
+  margin: 0 10px 10px 10px;
+  border-radius: 10px;
+  color:white;
+}
+.create:active{
+  transform: scale(0.8);
+  /* Scaling button to 0.8 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+.cancel {
+  background: red;
+   padding: 4px 18px;
+  font-size: 24px;
+  border: solid black 2px;
+  margin: 0 10px 10px 10px;
+  border-radius: 10px;
+  color: white;
+}
+.cancel:active{
+  transform: scale(0.8);
+  /* Scaling button to 0.8 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: lightblue;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+
+.warn {
+  font-size: 14px;
+  color: red;
+  float: right;
+}
+@media screen and (max-width: 600px) {
+  form {
+    width: 100%;
+    margin-top: 12px;
+  }
+  .sub {
+    padding-top: 14px;
+    font-size: small;
+  }
+  .buttons {
+    left: 0;
+    bottom: 0;
+  }
+  .create,
+  .cancel {
+    font-size: 14px;
+  }
+}
+
+ 
